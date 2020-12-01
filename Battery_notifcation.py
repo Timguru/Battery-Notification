@@ -2,9 +2,11 @@ import psutil
 from plyer import notification
 import time
 
-battery = psutil.sensors_battery()
 #from psutil we will import the
 #sensor_battery class
+#will return null if there is no battery
+battery = psutil.sensors_battery()
+
 
 while(True):
     percent = battery.percent
